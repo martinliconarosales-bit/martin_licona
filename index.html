@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Martín Licona — La libertad de las sombras</title>
+  <meta name="description" content="Escritor y gestor cultural. Enlaces oficiales, redes y compra de libros." />
+
+  <style>
+    :root{
+      --bg:#0b0b0d;
+      --panel:rgba(255,255,255,.04);
+      --panel2:rgba(255,255,255,.06);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.62);
+      --line:rgba(255,255,255,.12);
+      --focus:rgba(255,255,255,.22);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(255,255,255,.08), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(255,255,255,.06), transparent 60%),
+        var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 16px}
+    .card{
+      width:100%;max-width:760px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,var(--panel),rgba(255,255,255,.02));
+      border-radius:24px;
+      box-shadow:0 18px 60px rgba(0,0,0,.45);
+      overflow:hidden;
+    }
+    header{padding:26px 22px 18px;border-bottom:1px solid var(--line)}
+    h1{margin:0 0 6px;font-size:22px;font-weight:650}
+    .tagline{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
+    main{padding:18px 22px 22px}
+    .section{border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.02);margin-bottom:16px}
+    .section h2{
+      margin:0;padding:14px;
+      font-size:13px;letter-spacing:.16em;
+      text-transform:uppercase;color:var(--muted);
+      border-bottom:1px solid var(--line);
+    }
+    .list{padding:12px;display:flex;flex-direction:column;gap:10px}
+    .btn{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px;border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      transition:.15s;
+    }
+    .btn:hover{background:rgba(255,255,255,.06);border-color:var(--focus)}
+    .left{display:flex;gap:12px;align-items:center}
+    .icon{
+      width:34px;height:34px;border-radius:12px;
+      border:1px solid var(--line);
+      display:grid;place-items:center;
+      background:rgba(0,0,0,.25);
+      font-size:14px;
+    }
+    .label strong{display:block;font-size:14.5px;font-weight:620}
+    .label span{font-size:12.5px;color:var(--muted)}
+    footer{
+      padding:14px 22px 18px;
+      border-top:1px solid var(--line);
+      font-size:12.5px;color:rgba(255,255,255,.45);
+      display:flex;justify-content:space-between;flex-wrap:wrap
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+<div class="card">
+
+<header>
+  <h1>Martín Licona</h1>
+  <p class="tagline">
+    Escritor y gestor cultural. <em>La libertad de las sombras</em>.
+  </p>
+</header>
+
+<main>
+
+<!-- COMPRA -->
+<section class="section">
+  <h2>Compra</h2>
+  <div class="list">
+
+    <a class="btn" href="https://www.libreriacarlosfuentes.mx/es/producto/libertad-de-las-sombras-la" target="_blank">
+      <div class="left">
+        <div class="icon">📚</div>
+        <div class="label">
+          <strong>Librería Carlos Fuentes</strong>
+          <span>Compra institucional</span>
+        </div>
+      </div>
+      <div>›</div>
+    </a>
+
+    <a class="btn" href="https://wa.me/522441260797" target="_blank">
+      <div class="left">
+        <div class="icon">💬</div>
+        <div class="label">
+          <strong>Compra directa conmigo</strong>
+          <span>WhatsApp · envíos y entregas</span>
+        </div>
+      </div>
+      <div>›</div>
+    </a>
+
+  </div>
+</section>
+
+<!-- REDES -->
+<section class="section">
+  <h2>Redes</h2>
+  <div class="list">
+
+    <a class="btn" href="https://www.instagram.com/martin_licona" target="_blank">
+      <div class="left">
+        <div class="icon">IG</div>
+        <div class="label">
+          <strong>Instagram</strong>
+          <span>@martin_licona</span>
+        </div>
+      </div>
+      <div>›</div>
+    </a>
+
+    <a class="btn" href="https://www.facebook.com/share/1DPTvfNekU/" target="_blank">
+      <div class="left">
+        <div class="icon">f</div>
+        <div class="label">
+          <strong>Facebook</strong>
+          <span>Martín Licona</span>
+        </div>
+      </div>
+      <div>›</div>
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div>© <span id="y"></span> Martín Licona</div>
+  <div>Link oficial</div>
+</footer>
+
+</div>
+</div>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
