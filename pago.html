@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Opciones de compra y pago de La libertad de las sombras, de Martín Licona Rosales.">
+  <meta name="theme-color" content="#000000">
+  <title>Comprar La libertad de las sombras | Martín Licona</title>
+
+  <style>
+    :root{
+      --bg:#050505;
+      --panel:#0d0d0d;
+      --text:#f5f5f5;
+      --muted:#a6a6a6;
+      --line:#2a2a2a;
+      --soft:#171717;
+      --white:#ffffff;
+      --black:#000000;
+    }
+
+    *{box-sizing:border-box}
+
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Georgia, "Times New Roman", serif;
+      line-height:1.6;
+    }
+
+    a{color:inherit}
+
+    .wrap{
+      width:min(760px, calc(100% - 36px));
+      margin:0 auto;
+      padding:54px 0 42px;
+    }
+
+    .eyebrow{
+      margin:0 0 10px;
+      color:var(--muted);
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:.76rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      text-align:center;
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(2rem, 7vw, 3.7rem);
+      font-weight:normal;
+      line-height:1.08;
+      text-align:center;
+    }
+
+    .author{
+      margin:13px 0 0;
+      color:var(--muted);
+      text-align:center;
+      font-style:italic;
+    }
+
+    .intro{
+      max-width:590px;
+      margin:38px auto 0;
+      color:#d8d8d8;
+      text-align:center;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:1rem;
+    }
+
+    .actions{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:12px;
+      margin:34px 0 42px;
+    }
+
+    .button{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:51px;
+      padding:12px 16px;
+      border:1px solid var(--white);
+      background:var(--white);
+      color:var(--black);
+      text-decoration:none;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:.92rem;
+      font-weight:bold;
+      cursor:pointer;
+      transition:.2s ease;
+    }
+
+    .button:hover{
+      background:#d9d9d9;
+      border-color:#d9d9d9;
+    }
+
+    .button.secondary{
+      background:transparent;
+      color:var(--white);
+      border-color:#555;
+    }
+
+    .button.secondary:hover{
+      border-color:var(--white);
+      background:var(--soft);
+    }
+
+    .section{
+      margin-top:22px;
+      padding:27px;
+      border:1px solid var(--line);
+      background:var(--panel);
+    }
+
+    .section h2{
+      margin:0 0 8px;
+      font-size:1.42rem;
+      font-weight:normal;
+    }
+
+    .section-note{
+      margin:0 0 22px;
+      color:var(--muted);
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:.92rem;
+    }
+
+    .data-row{
+      padding:17px 0;
+      border-top:1px solid var(--line);
+    }
+
+    .data-row:first-of-type{
+      border-top:0;
+      padding-top:4px;
+    }
+
+    .label{
+      display:block;
+      margin-bottom:5px;
+      color:var(--muted);
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:.76rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .value{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:1.05rem;
+      overflow-wrap:anywhere;
+    }
+
+    .copy{
+      flex:0 0 auto;
+      padding:8px 11px;
+      border:1px solid #555;
+      background:transparent;
+      color:var(--white);
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:.78rem;
+      cursor:pointer;
+    }
+
+    .copy:hover{
+      border-color:var(--white);
+    }
+
+    .status{
+      min-height:24px;
+      margin:14px 0 0;
+      color:#d8d8d8;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:.88rem;
+      text-align:center;
+    }
+
+    .method{
+      display:grid;
+      grid-template-columns:42px 1fr;
+      gap:14px;
+      padding:18px 0;
+      border-top:1px solid var(--line);
+    }
+
+    .method:first-of-type{
+      border-top:0;
+      padding-top:5px;
+    }
+
+    .icon{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:42px;
+      height:42px;
+      border:1px solid #444;
+      border-radius:50%;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:1rem;
+    }
+
+    .method h3{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:1rem;
+    }
+
+    .method p{
+      margin:5px 0 0;
+      color:var(--muted);
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:.9rem;
+    }
+
+    .fine{
+      margin:20px 0 0;
+      color:#8f8f8f;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:.79rem;
+    }
+
+    footer{
+      margin-top:38px;
+      color:#777;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:.82rem;
+      text-align:center;
+    }
+
+    footer a{
+      text-underline-offset:4px;
+    }
+
+    @media (max-width:590px){
+      .wrap{padding-top:39px}
+      .actions{grid-template-columns:1fr}
+      .section{padding:22px 19px}
+      .value{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:10px;
+      }
+      .copy{width:100%}
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <p class="eyebrow">Compra directa con el autor</p>
+    <h1><em>La libertad de las sombras</em></h1>
+    <p class="author">Martín Licona Rosales</p>
+
+    <p class="intro">
+      Elige tu forma de pago. Para confirmar tu compra y acordar la entrega
+      o el envío, manda tu comprobante por WhatsApp.
+    </p>
+
+    <div class="actions">
+      <a class="button" href="#transferencia">Pagar por transferencia</a>
+      <a class="button secondary"
+         href="https://wa.me/522224740583?text=Hola%2C%20Mart%C3%ADn.%20Quiero%20comprar%20La%20libertad%20de%20las%20sombras.%20%C2%BFPodemos%20acordar%20la%20entrega%20o%20el%20env%C3%ADo%3F"
+         target="_blank" rel="noopener">
+        Consultar entrega o envío
+      </a>
+    </div>
+
+    <section class="section" aria-labelledby="metodos">
+      <h2 id="metodos">Opciones de pago</h2>
+      <p class="section-note">Elige la opción que te resulte más cómoda.</p>
+
+      <div class="method">
+        <div class="icon" aria-hidden="true">T</div>
+        <div>
+          <h3>Transferencia bancaria</h3>
+          <p>Copia la CLABE o el número de cuenta que aparecen abajo.</p>
+        </div>
+      </div>
+
+      <div class="method">
+        <div class="icon" aria-hidden="true">▣</div>
+        <div>
+          <h3>Tarjeta bancaria</h3>
+          <p>Disponible mediante terminal en presentaciones y entregas presenciales.</p>
+        </div>
+      </div>
+
+      <div class="method">
+        <div class="icon" aria-hidden="true">↗</div>
+        <div>
+          <h3>Entrega y envío</h3>
+          <p>Consulta por WhatsApp la disponibilidad, el punto de entrega o el costo de envío.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="transferencia" aria-labelledby="datos">
+      <h2 id="datos">Datos para transferencia</h2>
+      <p class="section-note">Verifica los datos antes de confirmar la operación.</p>
+
+      <div class="data-row">
+        <span class="label">Titular</span>
+        <div class="value">
+          <span>Martín Licona Rosales</span>
+        </div>
+      </div>
+
+      <div class="data-row">
+        <span class="label">Banco</span>
+        <div class="value">
+          <span>HSBC</span>
+        </div>
+      </div>
+
+      <div class="data-row">
+        <span class="label">CLABE</span>
+        <div class="value">
+          <span id="clabe">021180063606541595</span>
+          <button class="copy" type="button" onclick="copyText('021180063606541595', 'CLABE')">
+            Copiar CLABE
+          </button>
+        </div>
+      </div>
+
+      <div class="data-row">
+        <span class="label">Número de cuenta</span>
+        <div class="value">
+          <span id="cuenta">6360654159</span>
+          <button class="copy" type="button" onclick="copyText('6360654159', 'número de cuenta')">
+            Copiar cuenta
+          </button>
+        </div>
+      </div>
+
+      <div class="data-row">
+        <span class="label">Concepto sugerido</span>
+        <div class="value">
+          <span>Compra de libro</span>
+          <button class="copy" type="button" onclick="copyText('Compra de libro', 'concepto')">
+            Copiar concepto
+          </button>
+        </div>
+      </div>
+
+      <p class="status" id="status" aria-live="polite"></p>
+
+      <a class="button"
+         href="https://wa.me/522224740583?text=Hola%2C%20Mart%C3%ADn.%20Ya%20realic%C3%A9%20la%20transferencia%20para%20comprar%20La%20libertad%20de%20las%20sombras.%20Te%20env%C3%ADo%20mi%20comprobante."
+         target="_blank" rel="noopener">
+        Enviar comprobante por WhatsApp
+      </a>
+
+      <p class="fine">
+        Por seguridad, esta página no solicita contraseñas, NIP, CVV ni códigos de verificación.
+      </p>
+    </section>
+
+    <footer>
+      <a href="./">← Volver al sitio de Martín Licona</a>
+    </footer>
+  </main>
+
+  <script>
+    async function copyText(text, label) {
+      const status = document.getElementById("status");
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+        } else {
+          const temp = document.createElement("textarea");
+          temp.value = text;
+          temp.style.position = "fixed";
+          temp.style.opacity = "0";
+          document.body.appendChild(temp);
+          temp.focus();
+          temp.select();
+          document.execCommand("copy");
+          temp.remove();
+        }
+
+        status.textContent = label.charAt(0).toUpperCase() + label.slice(1) + " copiado.";
+        window.setTimeout(() => status.textContent = "", 2500);
+      } catch (error) {
+        status.textContent = "No fue posible copiar automáticamente. Mantén presionado el dato para copiarlo.";
+      }
+    }
+  </script>
+</body>
+</html>
