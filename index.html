@@ -1,88 +1,265 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-MX">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Martín Licona | Escritor, antropólogo y gestor cultural</title>
-<meta name="description" content="Sitio oficial de Martín Licona Rosales, autor de La libertad de las sombras, Premio Nacional de Cuento Juan José Arreola 2025.">
+<meta name="description" content="Sitio oficial de Martín Licona Rosales, autor de La libertad de las sombras, obra ganadora del Premio Nacional de Cuento Juan José Arreola 2025.">
+<meta name="author" content="Martín Licona Rosales">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#09090b">
+
+<link rel="canonical" href="https://martinlicona.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Martín Licona">
 <meta property="og:title" content="Martín Licona | La libertad de las sombras">
 <meta property="og:description" content="Escritor, antropólogo y gestor cultural. Premio Nacional de Cuento Juan José Arreola 2025.">
-<meta property="og:image" content="martin-licona-portada-v3.jpg">
+<meta property="og:url" content="https://martinlicona.com/">
+<meta property="og:image" content="https://martinlicona.com/martin-licona-portada-v4.jpg">
+<meta property="og:image:alt" content="Martín Licona durante una presentación de La libertad de las sombras">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Martín Licona | La libertad de las sombras">
+<meta name="twitter:description" content="Sitio oficial de Martín Licona, autor de La libertad de las sombras.">
+<meta name="twitter:image" content="https://martinlicona.com/martin-licona-portada-v4.jpg">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5NNXHSB6NN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5NNXHSB6NN');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Person",
+      "@id":"https://martinlicona.com/#person",
+      "name":"Martín Licona Rosales",
+      "alternateName":"Martín Licona",
+      "url":"https://martinlicona.com/",
+      "image":"https://martinlicona.com/martin-licona-portada-v4.jpg",
+      "jobTitle":["Escritor","Antropólogo","Gestor cultural"],
+      "award":"Premio Nacional de Cuento Juan José Arreola 2025",
+      "sameAs":[
+        "https://www.instagram.com/martin_licona",
+        "https://www.facebook.com/share/1DPTvfNekU/"
+      ]
+    },
+    {
+      "@type":"Book",
+      "@id":"https://martinlicona.com/#book",
+      "name":"La libertad de las sombras",
+      "author":{"@id":"https://martinlicona.com/#person"},
+      "url":"https://martinlicona.com/",
+      "inLanguage":"es",
+      "genre":["Cuento","Literatura fantástica","Literatura mexicana"],
+      "award":"Premio Nacional de Cuento Juan José Arreola 2025"
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://martinlicona.com/#website",
+      "url":"https://martinlicona.com/",
+      "name":"Martín Licona",
+      "inLanguage":"es-MX",
+      "publisher":{"@id":"https://martinlicona.com/#person"}
+    }
+  ]
+}
+</script>
+
 <style>
-:root{--bg:#09090b;--panel:#111114;--text:#f2f2ef;--muted:#aaa9a4;--line:rgba(255,255,255,.13);--line2:rgba(255,255,255,.25);--shadow:0 24px 80px rgba(0,0,0,.48);--max:980px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(850px 500px at 14% -5%,rgba(255,255,255,.075),transparent 62%),radial-gradient(700px 470px at 92% 4%,rgba(255,255,255,.05),transparent 63%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+:root{
+  --bg:#09090b;--panel:#111114;--panel2:#151519;--text:#f2f2ef;
+  --muted:#aaa9a4;--line:rgba(255,255,255,.13);--line2:rgba(255,255,255,.25);
+  --accent:#c9772d;--shadow:0 24px 80px rgba(0,0,0,.48);--max:1040px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;
+  background:
+    radial-gradient(850px 500px at 14% -5%,rgba(255,255,255,.075),transparent 62%),
+    radial-gradient(700px 470px at 92% 4%,rgba(201,119,45,.08),transparent 63%),var(--bg)
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
 .shell{width:min(var(--max),calc(100% - 30px));margin:auto;padding:28px 0 90px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:4px 2px 20px}.brand{font-family:Georgia,serif}.nav-links{display:flex;gap:16px;color:var(--muted);font-size:.82rem}.nav-links a:hover{color:var(--text)}
-.hero{display:grid;grid-template-columns:1.2fr .8fr;min-height:540px;overflow:hidden;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));box-shadow:var(--shadow)}
-.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:54px 48px}.eyebrow,.kicker,.group-title{color:var(--muted);font-size:.7rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
-h1{margin:0;font:400 clamp(3rem,8vw,5.8rem)/.94 Georgia,serif;letter-spacing:-.045em}.roles{margin:24px 0 0;font:italic 1.08rem Georgia,serif;color:#d8d7d2}.bio{max-width:610px;margin:22px 0 0;color:var(--muted);font-size:.98rem}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:47px;padding:11px 17px;border:1px solid var(--text);border-radius:999px;background:var(--text);color:#09090b;font-size:.86rem;font-weight:750}.button.secondary{background:transparent;color:var(--text);border-color:var(--line2)}
-.hero-photo{position:relative;min-height:400px;background:#151515}.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 39%;filter:grayscale(100%)}.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,9,11,.42),transparent 35%)}
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:16px}.section{grid-column:span 12;padding:26px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.024)}.half{grid-column:span 6}
-.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin-bottom:18px}.section h2{margin:0;font:400 1.65rem Georgia,serif}.note{margin:0;color:var(--muted);font-size:.82rem;text-align:right}
-.list{display:flex;flex-direction:column;gap:10px}.card{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.022);transition:.18s}.card:hover{transform:translateY(-2px);border-color:var(--line2);background:rgba(255,255,255,.05)}
-.main{display:flex;align-items:flex-start;gap:13px}.icon{flex:0 0 38px;display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);border-radius:12px;font-size:.75rem;font-weight:800;background:rgba(0,0,0,.2)}
-.label strong{display:block;font-size:.93rem;line-height:1.35}.label span{display:block;margin-top:4px;color:var(--muted);font-size:.78rem}.arrow{color:var(--muted);font-size:1.2rem}
-.events{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.event{padding:18px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(140deg,rgba(255,255,255,.045),rgba(255,255,255,.015))}.event h3{margin:0;font:400 1.1rem Georgia,serif}.event p{margin:8px 0 0;color:var(--muted);font-size:.82rem}.date{display:inline-block;margin-bottom:13px;color:var(--muted);font-size:.69rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
-.video{position:relative;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--line);border-radius:17px;background:#000}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.quote{margin:0;font:400 clamp(1.3rem,3vw,2.1rem)/1.35 Georgia,serif;color:#e8e7e2}.quote small{display:block;margin-top:14px;color:var(--muted);font:normal .73rem Inter,system-ui;text-transform:uppercase;letter-spacing:.1em}
-footer{display:flex;justify-content:space-between;gap:18px;padding:28px 4px 0;color:rgba(255,255,255,.45);font-size:.74rem}.wa{position:fixed;right:18px;bottom:18px;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;background:#f3f3f1;color:#09090b;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.4)}
-@media(max-width:760px){.nav-links{display:none}.hero{grid-template-columns:1fr}.hero-photo{order:-1;min-height:390px}.hero-copy{padding:34px 24px 38px}.half{grid-column:span 12}.events{grid-template-columns:1fr}.section{padding:21px 18px}.section-head{align-items:flex-start;flex-direction:column}.note{text-align:left}.shell{width:min(100% - 22px,var(--max));padding-top:14px}}
+nav{display:flex;justify-content:space-between;align-items:center;padding:4px 2px 20px}
+.brand{font-family:Georgia,serif}
+.nav-links{display:flex;gap:16px;color:var(--muted);font-size:.82rem}
+.nav-links a:hover{color:var(--text)}
+.hero{
+  display:grid;grid-template-columns:1.15fr .85fr;min-height:560px;overflow:hidden;
+  border:1px solid var(--line);border-radius:28px;
+  background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));box-shadow:var(--shadow)
+}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:56px 48px}
+.eyebrow,.kicker,.group-title{color:var(--muted);font-size:.7rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+h1{margin:0;font:400 clamp(3rem,8vw,5.8rem)/.94 Georgia,serif;letter-spacing:-.045em}
+.roles{margin:24px 0 0;font:italic 1.08rem Georgia,serif;color:#d8d7d2}
+.bio{max-width:610px;margin:22px 0 0;color:var(--muted);font-size:.98rem}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.button{
+  display:inline-flex;align-items:center;justify-content:center;min-height:47px;padding:11px 17px;
+  border:1px solid var(--text);border-radius:999px;background:var(--text);color:#09090b;font-size:.86rem;font-weight:750
+}
+.button.secondary{background:transparent;color:var(--text);border-color:var(--line2)}
+.button:hover{transform:translateY(-2px)}
+.hero-photo{position:relative;min-height:420px;background:#151515}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 39%;filter:grayscale(100%)}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,9,11,.42),transparent 35%)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:16px}
+.section{grid-column:span 12;padding:26px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.024)}
+.half{grid-column:span 6}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin-bottom:18px}
+.section h2{margin:0;font:400 1.65rem Georgia,serif}
+.note{margin:0;color:var(--muted);font-size:.82rem;text-align:right}
+.list{display:flex;flex-direction:column;gap:10px}
+.card{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.022);transition:.18s}
+.card:hover{transform:translateY(-2px);border-color:var(--line2);background:rgba(255,255,255,.05)}
+.main{display:flex;align-items:flex-start;gap:13px}
+.icon{flex:0 0 38px;display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);border-radius:12px;font-size:.75rem;font-weight:800;background:rgba(0,0,0,.2)}
+.label strong{display:block;font-size:.93rem;line-height:1.35}
+.label span{display:block;margin-top:4px;color:var(--muted);font-size:.78rem}
+.arrow{color:var(--muted);font-size:1.2rem}
+.events{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.event{padding:18px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(140deg,rgba(255,255,255,.045),rgba(255,255,255,.015))}
+.event h3{margin:0;font:400 1.1rem Georgia,serif}
+.event p{margin:8px 0 0;color:var(--muted);font-size:.82rem}
+.date{display:inline-block;margin-bottom:13px;color:var(--accent);font-size:.69rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.video{position:relative;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--line);border-radius:17px;background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.quote{margin:0;font:400 clamp(1.3rem,3vw,2.1rem)/1.35 Georgia,serif;color:#e8e7e2}
+.quote small{display:block;margin-top:14px;color:var(--muted);font:normal .73rem Inter,system-ui;text-transform:uppercase;letter-spacing:.1em}
+footer{display:flex;justify-content:space-between;gap:18px;padding:28px 4px 0;color:rgba(255,255,255,.45);font-size:.74rem}
+.wa{position:fixed;right:18px;bottom:18px;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;background:#f3f3f1;color:#09090b;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.4)}
+@media(max-width:760px){
+  .nav-links{display:none}.hero{grid-template-columns:1fr}.hero-photo{order:-1;min-height:390px}
+  .hero-copy{padding:34px 24px 38px}.half{grid-column:span 12}.events{grid-template-columns:1fr}
+  .section{padding:21px 18px}.section-head{align-items:flex-start;flex-direction:column}.note{text-align:left}
+  .shell{width:min(100% - 22px,var(--max));padding-top:14px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
+
 <body>
 <div class="shell">
-<nav><a class="brand" href="#inicio">Martín Licona</a><div class="nav-links"><a href="#compra">Compra</a><a href="#eventos">Eventos</a><a href="#prensa">Prensa</a><a href="#videos">Videos</a><a href="#contacto">Contacto</a></div></nav>
-<header class="hero" id="inicio"><div class="hero-copy"><p class="eyebrow">Premio Nacional de Cuento Juan José Arreola 2025</p><h1>Martín<br>Licona</h1><p class="roles">Escritor · Antropólogo · Gestor cultural</p><p class="bio">Autor de <em>La libertad de las sombras</em>, un libro de cuentos donde lo extraño, la memoria y la melancolía atraviesan la realidad sin romperla.</p><div class="actions"><a class="button" href="pago.html">Comprar el libro</a><a class="button secondary" href="#prensa">Explorar prensa</a></div></div><div class="hero-photo"><img src="martin-licona-portada-v3.jpg" alt="Martín Licona durante una presentación de La libertad de las sombras"></div></header>
-<main class="grid">
+<nav aria-label="Navegación principal">
+  <a class="brand" href="#inicio">Martín Licona</a>
+  <div class="nav-links">
+    <a href="#compra">Compra</a><a href="#eventos">Eventos</a><a href="#prensa">Prensa</a><a href="#videos">Videos</a><a href="#contacto">Contacto</a>
+  </div>
+</nav>
 
-<section class="section half" id="compra"><div class="section-head"><div><p class="kicker">La libertad de las sombras</p><h2>Comprar</h2></div></div><div class="list">
-<a class="card" href="pago.html"><div class="main"><div class="icon">MX</div><div class="label"><strong>Compra directa</strong><span>Transferencia, tarjeta, entregas y envíos</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://www.libreriacarlosfuentes.mx/es/producto/libertad-de-las-sombras-la" target="_blank"><div class="main"><div class="icon">LCF</div><div class="label"><strong>Librería Carlos Fuentes</strong><span>Compra institucional en línea</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://wa.me/522224740583?text=Hola%2C%20Mart%C3%ADn.%20Quiero%20comprar%20un%20ejemplar%20dedicado%20de%20La%20libertad%20de%20las%20sombras." target="_blank"><div class="main"><div class="icon">✍</div><div class="label"><strong>Solicitar ejemplar dedicado</strong><span>Mensaje directo por WhatsApp</span></div></div><div class="arrow">›</div></a>
-</div></section>
+<header class="hero" id="inicio">
+  <div class="hero-copy">
+    <p class="eyebrow">Premio Nacional de Cuento Juan José Arreola 2025</p>
+    <h1>Martín<br>Licona</h1>
+    <p class="roles">Escritor · Antropólogo · Gestor cultural</p>
+    <p class="bio">Autor de <em>La libertad de las sombras</em>, un libro de cuentos donde lo extraño, la memoria y la melancolía atraviesan la realidad sin romperla.</p>
+    <div class="actions">
+      <a class="button" href="/pago.html">Comprar el libro</a>
+      <a class="button secondary" href="#prensa">Explorar prensa</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="/martin-licona-portada-v4.jpg" alt="Martín Licona durante una presentación de La libertad de las sombras" width="960" height="1200">
+  </div>
+</header>
+
+<main class="grid">
+<section class="section half" id="compra">
+  <div class="section-head"><div><p class="kicker">La libertad de las sombras</p><h2>Comprar</h2></div></div>
+  <div class="list">
+    <a class="card" href="/pago.html"><div class="main"><div class="icon">MX</div><div class="label"><strong>Compra directa</strong><span>Transferencia, tarjeta, entregas y envíos</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://www.libreriacarlosfuentes.mx/es/producto/libertad-de-las-sombras-la" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">LCF</div><div class="label"><strong>Librería Carlos Fuentes</strong><span>Compra institucional en línea</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://wa.me/522224740583?text=Hola%2C%20Mart%C3%ADn.%20Quiero%20comprar%20un%20ejemplar%20dedicado%20de%20La%20libertad%20de%20las%20sombras." target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">✍</div><div class="label"><strong>Solicitar ejemplar dedicado</strong><span>Mensaje directo por WhatsApp</span></div></div><div class="arrow">›</div></a>
+  </div>
+</section>
 
 <section class="section half"><p class="kicker">Poética</p><blockquote class="quote">“La libertad de las sombras es un viaje por lo extraño y lo melancólico.”<small>Martín Licona</small></blockquote></section>
 
-<section class="section" id="eventos"><div class="section-head"><div><p class="kicker">Agenda</p><h2>Próximos eventos</h2></div><p class="note">Agosto de 2026</p></div><div class="events">
-<article class="event"><span class="date">7 de agosto</span><h3>Presentación de <em>La libertad de las sombras</em></h3><p>El Patio del Monstruo · Atlixco, Puebla</p></article>
-<article class="event"><span class="date">15 de agosto</span><h3>Presentación de <em>La libertad de las sombras</em></h3><p>Museo Nacional de Antropología · Ciudad de México</p></article>
-<article class="event"><span class="date">18 de agosto</span><h3>Resultados de <em>La semántica del abandono II</em></h3><p>Puebla</p></article>
-<article class="event"><span class="date">23 de agosto</span><h3>Presentación y encuentro con lectores</h3><p>Zócalo de Puebla · Puebla</p></article>
-</div></section>
+<section class="section" id="eventos">
+  <div class="section-head"><div><p class="kicker">Agenda</p><h2>Próximos eventos</h2></div><p class="note">Agosto de 2026</p></div>
+  <div class="events">
+    <article class="event"><span class="date">7 de agosto</span><h3>Presentación de <em>La libertad de las sombras</em></h3><p>El Patio del Monstruo · Atlixco, Puebla</p></article>
+    <article class="event"><span class="date">15 de agosto</span><h3>Presentación de <em>La libertad de las sombras</em></h3><p>Museo Nacional de Antropología · Ciudad de México</p></article>
+    <article class="event"><span class="date">18 de agosto</span><h3>Resultados de <em>La semántica del abandono II</em></h3><p>Puebla</p></article>
+    <article class="event"><span class="date">23 de agosto</span><h3>Presentación y encuentro con lectores</h3><p>Zócalo de Puebla · Puebla</p></article>
+  </div>
+</section>
 
-<section class="section" id="prensa"><div class="section-head"><div><p class="kicker">Archivo público</p><h2>Prensa y crítica</h2></div><p class="note">Notas, entrevistas y conversaciones</p></div>
-<p class="group-title">Crítica literaria</p><div class="list">
-<a class="card" href="https://neotraba.com/apuntes-sobre-la-libertad-de-las-sombras-martin-licona/" target="_blank"><div class="main"><div class="icon">NT</div><div class="label"><strong>Apuntes sobre <em>La libertad de las sombras</em></strong><span>David Marín · NEOTRABA · 11 de febrero de 2026</span></div></div><div class="arrow">›</div></a></div>
-<p class="group-title" style="margin-top:18px">Institucional</p><div class="list">
-<a class="card" href="https://www.udg.mx/es/noticia/martin-licona-rosales-gana-el-concurso-nacional-de-cuento-juan-jose-arreola-2025" target="_blank"><div class="main"><div class="icon">UdeG</div><div class="label"><strong>Martín Licona gana el Concurso Nacional de Cuento Juan José Arreola 2025</strong><span>Universidad de Guadalajara</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://uady.mx/noticias/url/filey-reune-martin-licona-sofia-segovia" target="_blank"><div class="main"><div class="icon">UADY</div><div class="label"><strong>FILEY reúne a Martín Licona y Sofía Segovia con historias de memoria y violencia</strong><span>Universidad Autónoma de Yucatán</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://filey.org/blog/prensa/violencia-y-belleza-en-la-libertad-de-las-sombras/" target="_blank"><div class="main"><div class="icon">FILEY</div><div class="label"><strong>Violencia y belleza en <em>La libertad de las sombras</em></strong><span>Feria Internacional de la Lectura Yucatán</span></div></div><div class="arrow">›</div></a></div>
-<p class="group-title" style="margin-top:18px">Medios</p><div class="list">
-<a class="card" href="https://www.lajornadadeoriente.com.mx/noticias/estado/martin-licona-atlixco-gana-premio-nacional-cuento-juan-jose-arreola-2025/" target="_blank"><div class="main"><div class="icon">LJO</div><div class="label"><strong>Martín Licona, de Atlixco, gana el Premio Nacional de Cuento Juan José Arreola</strong><span>La Jornada de Oriente</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://www.informador.mx/cultura/La-libertad-de-las-sombras-gana-el-XXIV-Concurso-Nacional-de-Cuento-Juan-Jose-Arreola-2025-20251120-0057.html" target="_blank"><div class="main"><div class="icon">EI</div><div class="label"><strong><em>La libertad de las sombras</em> gana el XXIV Concurso Nacional de Cuento Juan José Arreola</strong><span>El Informador</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://web.ntrguadalajara.com/post.php?id_nota=233401" target="_blank"><div class="main"><div class="icon">NTR</div><div class="label"><strong>Reconocen a Martín Licona con el Premio Juan José Arreola</strong><span>NTR Guadalajara</span></div></div><div class="arrow">›</div></a></div>
-<p class="group-title" style="margin-top:18px">Podcasts</p><div class="list">
-<a class="card" href="https://open.spotify.com/episode/30kKUCFVSKB5nqKdL9Q4ra" target="_blank"><div class="main"><div class="icon">SP</div><div class="label"><strong>Entrevista sobre <em>La libertad de las sombras</em></strong><span>Spotify</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://open.spotify.com/episode/1DQSPHPHIvSrcWJTth6pAD" target="_blank"><div class="main"><div class="icon">SP</div><div class="label"><strong>Conversación con Martín Licona</strong><span>Spotify</span></div></div><div class="arrow">›</div></a></div></section>
+<section class="section" id="prensa">
+  <div class="section-head"><div><p class="kicker">Archivo público</p><h2>Prensa y crítica</h2></div><p class="note">Notas, entrevistas y conversaciones</p></div>
 
-<section class="section" id="videos"><div class="section-head"><div><p class="kicker">Videoteca</p><h2>Video destacado</h2></div><p class="note">Presentación en la FILEY</p></div><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/K5e3qRDDuYQ" title="Presentación de La libertad de las sombras en la FILEY" loading="lazy" allowfullscreen></iframe></div><div class="list" style="margin-top:12px">
-<a class="card" href="https://youtu.be/drm-K2Q61ug" target="_blank"><div class="main"><div class="icon">YT</div><div class="label"><strong>Entrevista a Martín Licona</strong><span>Centro de Medios Anáhuac Mayab</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://www.facebook.com/share/v/1C8aacUAZB/" target="_blank"><div class="main"><div class="icon">FB</div><div class="label"><strong>Presentación y conversación en vivo</strong><span>Facebook Live</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://www.dailymotion.com/video/x9h0p2e" target="_blank"><div class="main"><div class="icon">DM</div><div class="label"><strong>Premiación del Concurso Nacional de Cuento Juan José Arreola</strong><span>Universidad de Guadalajara</span></div></div><div class="arrow">›</div></a></div></section>
+  <p class="group-title">Crítica literaria</p>
+  <div class="list">
+    <a class="card" href="https://neotraba.com/apuntes-sobre-la-libertad-de-las-sombras-martin-licona/" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">NT</div><div class="label"><strong>Apuntes sobre <em>La libertad de las sombras</em></strong><span>David Marín · NEOTRABA · 11 de febrero de 2026</span></div></div><div class="arrow">›</div></a>
+  </div>
 
-<section class="section half"><div class="section-head"><div><p class="kicker">Material profesional</p><h2>Media Kit</h2></div></div><div class="list"><a class="card" href="MEDIA%20KIT%20MLR.pdf" target="_blank"><div class="main"><div class="icon">PDF</div><div class="label"><strong>Descargar Media Kit</strong><span>Información para prensa, festivales e instituciones</span></div></div><div class="arrow">›</div></a></div></section>
-<section class="section half" id="contacto"><div class="section-head"><div><p class="kicker">Comunidad</p><h2>Redes y contacto</h2></div></div><div class="list">
-<a class="card" href="https://www.instagram.com/martin_licona" target="_blank"><div class="main"><div class="icon">IG</div><div class="label"><strong>Instagram</strong><span>@martin_licona</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://www.facebook.com/share/1DPTvfNekU/" target="_blank"><div class="main"><div class="icon">FB</div><div class="label"><strong>Facebook</strong><span>Martín Licona</span></div></div><div class="arrow">›</div></a>
-<a class="card" href="https://wa.me/522224740583?text=Hola%2C%20Mart%C3%ADn.%20Quiero%20ponerme%20en%20contacto%20contigo." target="_blank"><div class="main"><div class="icon">WA</div><div class="label"><strong>WhatsApp</strong><span>Compra, invitaciones y colaboraciones</span></div></div><div class="arrow">›</div></a></div></section>
+  <p class="group-title" style="margin-top:18px">Institucional</p>
+  <div class="list">
+    <a class="card" href="https://www.udg.mx/es/noticia/martin-licona-rosales-gana-el-concurso-nacional-de-cuento-juan-jose-arreola-2025" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">UdeG</div><div class="label"><strong>Martín Licona gana el Concurso Nacional de Cuento Juan José Arreola 2025</strong><span>Universidad de Guadalajara</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://uady.mx/noticias/url/filey-reune-martin-licona-sofia-segovia" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">UADY</div><div class="label"><strong>FILEY reúne a Martín Licona y Sofía Segovia con historias de memoria y violencia</strong><span>Universidad Autónoma de Yucatán</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://filey.org/blog/prensa/violencia-y-belleza-en-la-libertad-de-las-sombras/" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">FILEY</div><div class="label"><strong>Violencia y belleza en <em>La libertad de las sombras</em></strong><span>Feria Internacional de la Lectura Yucatán</span></div></div><div class="arrow">›</div></a>
+  </div>
+
+  <p class="group-title" style="margin-top:18px">Medios</p>
+  <div class="list">
+    <a class="card" href="https://www.lajornadadeoriente.com.mx/noticias/estado/martin-licona-atlixco-gana-premio-nacional-cuento-juan-jose-arreola-2025/" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">LJO</div><div class="label"><strong>Martín Licona, de Atlixco, gana el Premio Nacional de Cuento Juan José Arreola</strong><span>La Jornada de Oriente</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://www.informador.mx/cultura/La-libertad-de-las-sombras-gana-el-XXIV-Concurso-Nacional-de-Cuento-Juan-Jose-Arreola-2025-20251120-0057.html" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">EI</div><div class="label"><strong><em>La libertad de las sombras</em> gana el XXIV Concurso Nacional de Cuento Juan José Arreola</strong><span>El Informador</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://web.ntrguadalajara.com/post.php?id_nota=233401" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">NTR</div><div class="label"><strong>Reconocen a Martín Licona con el Premio Juan José Arreola</strong><span>NTR Guadalajara</span></div></div><div class="arrow">›</div></a>
+  </div>
+
+  <p class="group-title" style="margin-top:18px">Podcasts</p>
+  <div class="list">
+    <a class="card" href="https://open.spotify.com/episode/30kKUCFVSKB5nqKdL9Q4ra" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">SP</div><div class="label"><strong>Entrevista sobre <em>La libertad de las sombras</em></strong><span>Spotify</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://open.spotify.com/episode/1DQSPHPHIvSrcWJTth6pAD" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">SP</div><div class="label"><strong>Conversación con Martín Licona</strong><span>Spotify</span></div></div><div class="arrow">›</div></a>
+  </div>
+</section>
+
+<section class="section" id="videos">
+  <div class="section-head"><div><p class="kicker">Videoteca</p><h2>Video destacado</h2></div><p class="note">Presentación en la FILEY</p></div>
+  <div class="video">
+    <iframe src="https://www.youtube-nocookie.com/embed/K5e3qRDDuYQ" title="Presentación de La libertad de las sombras en la FILEY" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="list" style="margin-top:12px">
+    <a class="card" href="https://youtu.be/drm-K2Q61ug" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">YT</div><div class="label"><strong>Entrevista a Martín Licona</strong><span>Centro de Medios Anáhuac Mayab</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://www.facebook.com/share/v/1C8aacUAZB/" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">FB</div><div class="label"><strong>Presentación y conversación en vivo</strong><span>Facebook Live</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://www.dailymotion.com/video/x9h0p2e" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">DM</div><div class="label"><strong>Premiación del Concurso Nacional de Cuento Juan José Arreola</strong><span>Universidad de Guadalajara</span></div></div><div class="arrow">›</div></a>
+  </div>
+</section>
+
+<section class="section half">
+  <div class="section-head"><div><p class="kicker">Material profesional</p><h2>Media Kit</h2></div></div>
+  <div class="list"><a class="card" href="/KIT%20DE%20PRENSA%20MLR.pdf" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">PDF</div><div class="label"><strong>Descargar Media Kit</strong><span>Información para prensa, festivales e instituciones</span></div></div><div class="arrow">›</div></a></div>
+</section>
+
+<section class="section half" id="contacto">
+  <div class="section-head"><div><p class="kicker">Comunidad</p><h2>Redes y contacto</h2></div></div>
+  <div class="list">
+    <a class="card" href="https://www.instagram.com/martin_licona" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">IG</div><div class="label"><strong>Instagram</strong><span>@martin_licona</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://www.facebook.com/share/1DPTvfNekU/" target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">FB</div><div class="label"><strong>Facebook</strong><span>Martín Licona</span></div></div><div class="arrow">›</div></a>
+    <a class="card" href="https://wa.me/522224740583?text=Hola%2C%20Mart%C3%ADn.%20Quiero%20ponerme%20en%20contacto%20contigo." target="_blank" rel="noopener noreferrer"><div class="main"><div class="icon">WA</div><div class="label"><strong>WhatsApp</strong><span>Compra, invitaciones y colaboraciones</span></div></div><div class="arrow">›</div></a>
+  </div>
+</section>
 </main>
+
 <footer><div>© <span id="year"></span> Martín Licona Rosales</div><div>Sitio oficial</div></footer>
 </div>
-<a class="wa" href="https://wa.me/522224740583?text=Hola%2C%20Mart%C3%ADn.%20Quiero%20ponerme%20en%20contacto%20contigo." target="_blank" aria-label="WhatsApp">WA</a>
+
+<a class="wa" href="https://wa.me/522224740583?text=Hola%2C%20Mart%C3%ADn.%20Quiero%20ponerme%20en%20contacto%20contigo." target="_blank" rel="noopener noreferrer" aria-label="Contactar a Martín Licona por WhatsApp">WA</a>
 <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
 </body>
 </html>
