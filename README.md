@@ -1,21 +1,18 @@
-# Sitio oficial de Martín Licona
+# Paquete de corrección para martinlicona.com
 
-## Archivos principales
-- `index.html`: página principal.
-- `laboratorio.html`: página del Laboratorio de Escritura Creativa.
-- `style.css`: diseño compartido.
-- `script.js`: menú móvil y animaciones.
-- `images/`: fotografías optimizadas.
+## Qué corrige
+- Las fotografías se cargan desde la raíz del repositorio.
+- Recupera la agenda de agosto de 2026.
+- Crea `prensa.html` con todas las notas, videos y podcasts reunidos.
+- Corrige el enlace al Kit de Prensa.
+- Actualiza el sitemap.
 
-## Cómo subir a GitHub
-1. Sube todos los archivos y la carpeta `images` a la raíz del repositorio.
-2. Reemplaza `index.html` cuando GitHub lo solicite.
-3. Conserva `CNAME`, `pago.html`, `favicon.svg`, `robots.txt`, `sitemap.xml` y `MEDIA KIT MLR.pdf`.
-4. Haz Commit changes.
-5. Espera entre uno y cinco minutos y recarga `https://martinlicona.com`.
+## Archivos que debes subir
+- index.html
+- laboratorio.html
+- prensa.html
+- style.css
+- script.js
+- sitemap.xml
 
-## Página del laboratorio
-`https://martinlicona.com/laboratorio.html`
-
-El botón de inscripción dirige a:
-`https://forms.gle/s55ncFQ1rnBieB8n8`
+No borres las fotografías que ya subiste individualmente.
