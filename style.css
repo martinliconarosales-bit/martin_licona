@@ -430,3 +430,36 @@ h1{
   .timeline article{grid-template-columns:1fr;gap:4px}
   .section-head{align-items:flex-start;flex-direction:column}
 }
+
+/* Identidad definitiva Martín Licona */
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.08rem;
+  font-weight:700;
+}
+.brand img{
+  width:46px;
+  height:32px;
+  object-fit:contain;
+  flex:none;
+}
+.email-note{
+  margin:18px 0 0;
+  color:rgba(255,255,255,.78);
+  font-size:.96rem;
+}
+.email-note a{
+  color:#E5B56E;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+.footer a{
+  color:inherit;
+}
+@media(max-width:640px){
+  .brand span{font-size:.98rem}
+  .brand img{width:40px}
+}

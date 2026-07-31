@@ -1,18 +1,31 @@
-# Paquete de corrección para martinlicona.com
+# martinlicona.com — versión definitiva
 
-## Qué corrige
-- Las fotografías se cargan desde la raíz del repositorio.
-- Recupera la agenda de agosto de 2026.
-- Crea `prensa.html` con todas las notas, videos y podcasts reunidos.
-- Corrige el enlace al Kit de Prensa.
-- Actualiza el sitemap.
+Fecha de consolidación: 30 de julio de 2026.
 
-## Archivos que debes subir
-- index.html
-- laboratorio.html
-- prensa.html
-- style.css
-- script.js
-- sitemap.xml
+## Archivos que debes subir o reemplazar
 
-No borres las fotografías que ya subiste individualmente.
+- `index.html`
+- `laboratorio.html`
+- `prensa.html`
+- `style.css`
+- `script.js`
+- `sitemap.xml`
+- `favicon.svg`
+- `logo-martin-licona.svg`
+- `logo-martin-licona-oscuro.svg`
+
+## Qué incorpora
+
+- Identidad visual definitiva: símbolo de libro abierto / letra M con eje dorado.
+- Portada, laboratorio y archivo de prensa estables.
+- Inscripción al laboratorio mediante Google Forms, correo o WhatsApp.
+- Correo público: `martinliconarosales@gmail.com`.
+- Agenda, Analytics, SEO y sitemap.
+- Parámetro de versión `20260730` en CSS y JavaScript para evitar que el navegador muestre archivos antiguos.
+
+## Fotografías
+
+Las fotografías permanecen en la raíz del repositorio y no deben borrarse.
+
+Esta versión debe conservarse como base. En adelante conviene actualizar contenido puntual
+(eventos, fechas, prensa o nuevas generaciones) sin volver a cambiar la arquitectura general.
