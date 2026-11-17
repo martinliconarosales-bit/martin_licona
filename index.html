@@ -128,34 +128,150 @@ gtag('config','G-5NNXHSB6NN');
   </div>
 </section>
 
-<section class="section" id="eventos">
+<section class="section" id="resenas">
   <div class="container reveal">
     <div class="section-head">
       <div>
-        <p class="kicker">Próximos eventos</p>
-        <h2>Agenda de agosto de 2026.</h2>
+        <p class="kicker">Lectores</p>
+        <h2>Reseñas de <em>La libertad de las sombras</em>.</h2>
+        <p class="section-intro">
+          Cada lectura abre una conversación. Si ya leíste el libro, me gustaría saber
+          qué historia, imagen o pregunta permaneció contigo.
+        </p>
       </div>
     </div>
-    <div class="timeline">
-      <article>
-        <strong>7 de agosto</strong>
-        <span><b>Presentación de <em>La libertad de las sombras</em></b><br>El Patio del Monstruo · Atlixco, Puebla.</span>
-      </article>
-      <article>
-        <strong>15 de agosto</strong>
-        <span><b>Presentación de <em>La libertad de las sombras</em></b><br>Museo Nacional de Antropología · Ciudad de México.</span>
-      </article>
-      <article>
-        <strong>18 de agosto</strong>
-        <span><b>Presentación de resultados de <em>La semántica del abandono II</em></b><br>Puebla.</span>
-      </article>
-      <article>
-        <strong>23 de agosto</strong>
-        <span><b>Presentación y encuentro con lectores</b><br>Zócalo de Puebla · Puebla.</span>
-      </article>
+
+    <div class="review-layout">
+      <div class="review-invitation">
+        <p class="review-quote">«Lo extraño y lo melancólico atraviesan la realidad».</p>
+        <p>
+          Comparte tu experiencia de lectura. Tu comentario puede ayudar a otros lectores
+          a acercarse al libro.
+        </p>
+        <a class="btn accent" href="/pago.html">Conocer el libro</a>
+      </div>
+
+      <form class="review-form" id="reviewForm">
+        <label for="reviewName">Tu nombre <span>(opcional)</span></label>
+        <input id="reviewName" name="nombre" type="text" maxlength="80"
+               placeholder="¿Cómo te gustaría aparecer?">
+
+        <label for="reviewText">¿Qué te pareció el libro?</label>
+        <textarea id="reviewText" name="resena" rows="5" maxlength="1500"
+                  placeholder="Cuéntame qué te dejó la lectura..." required></textarea>
+
+        <button class="btn accent" type="submit">Enviar reseña por correo</button>
+        <p class="review-note">
+          Al pulsar enviar se abrirá tu aplicación de correo con el comentario preparado.
+          La reseña no se publica automáticamente en el sitio.
+        </p>
+        <p class="review-status" id="reviewStatus" aria-live="polite"></p>
+      </form>
     </div>
   </div>
 </section>
+
+<style>
+  #resenas .review-layout {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 22px;
+    align-items: stretch;
+    margin-top: 24px;
+  }
+  #resenas .review-invitation,
+  #resenas .review-form {
+    padding: 26px;
+    border: 1px solid var(--line, rgba(184,134,40,.35));
+    border-radius: 16px;
+    background: var(--surface, rgba(255,255,255,.025));
+  }
+  #resenas .review-quote {
+    margin: 0 0 18px;
+    color: var(--text, inherit);
+    font: 400 clamp(1.35rem, 2.6vw, 2rem)/1.35 Georgia, serif;
+  }
+  #resenas .review-invitation p:not(.review-quote) {
+    color: var(--muted, inherit);
+    line-height: 1.7;
+    margin-bottom: 22px;
+  }
+  #resenas .review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #resenas .review-form label {
+    margin-top: 5px;
+    font-size: .88rem;
+    font-weight: 700;
+  }
+  #resenas .review-form label span,
+  #resenas .review-note {
+    color: var(--muted, #999);
+    font-size: .78rem;
+    font-weight: 400;
+  }
+  #resenas .review-form input,
+  #resenas .review-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 13px;
+    border: 1px solid var(--line, rgba(255,255,255,.2));
+    border-radius: 9px;
+    background: rgba(0,0,0,.16);
+    color: var(--text, inherit);
+    font: inherit;
+  }
+  #resenas .review-form textarea {
+    resize: vertical;
+    min-height: 125px;
+  }
+  #resenas .review-form input:focus,
+  #resenas .review-form textarea:focus {
+    outline: 2px solid var(--accent, #B88628);
+    outline-offset: 2px;
+  }
+  #resenas .review-form button {
+    align-self: flex-start;
+    cursor: pointer;
+    margin-top: 6px;
+  }
+  #resenas .review-note { line-height: 1.5; margin: 0; }
+  #resenas .review-status { margin: 0; font-size: .82rem; color: var(--muted, inherit); }
+  @media (max-width: 760px) {
+    #resenas .review-layout { grid-template-columns: 1fr; }
+    #resenas .review-invitation, #resenas .review-form { padding: 20px; }
+  }
+</style>
+
+<script>
+  (function () {
+    const form = document.getElementById('reviewForm');
+    if (!form) return;
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('reviewName').value.trim();
+      const review = document.getElementById('reviewText').value.trim();
+      const status = document.getElementById('reviewStatus');
+
+      if (!review) {
+        status.textContent = 'Escribe tu comentario antes de enviarlo.';
+        return;
+      }
+
+      const subject = encodeURIComponent('Reseña de La libertad de las sombras');
+      const body = encodeURIComponent(
+        'Nombre: ' + (name || 'No especificado') + '\n\n' +
+        'Comentario:\n' + review
+      );
+      status.textContent = 'Se abrirá tu aplicación de correo para enviar el comentario.';
+      window.location.href =
+        'mailto:martinliconarosales@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  })();
+</script>
 
 <section class="section" id="impacto">
   <div class="container reveal">
